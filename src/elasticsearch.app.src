@@ -12,7 +12,8 @@
             jsx
         ]},
         {included_applications, []},
-        {mod, {elasticsearch_app, []}},
+        {mod, {elasticsearch_app,
+               [elasticsearch_app, elasticsearch_sup, elasticsearch_worker, elasticsearch]}},
         {env, [
             {elasticsearch, [
             {host, "localhost"},
